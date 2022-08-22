@@ -12,7 +12,7 @@ export class GetProductsService {
   constructor(private http: HttpClient) { }
 
   getProductsList() {
-    return this.http.get('https://product-api-nodejs.herokuapp.com/products/')
+    return this.http.get('https://ma20222208.herokuapp.com/api/home/data/')
   }
   getProduct(id: any) {
     return this.http.get(`https://product-api-nodejs.herokuapp.com/products/${id}`)
