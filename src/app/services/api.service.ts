@@ -9,7 +9,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getProduct() {
-    return this.http.get<any>("https://ma20222208.herokuapp.com/api/home/data")
+    return this.http.get<any>("https://product-api-nodejs.herokuapp.com/products/")
       .pipe(map((res: any) => {
         return res;
       }))
