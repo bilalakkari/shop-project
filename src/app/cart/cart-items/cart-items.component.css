@@ -1,0 +1,28 @@
+/* 
+taken from Udacity repo:
+https://github.com/udacity/nd-0067-c3-angular-fundamentals-project-starter
+ */
+ 
+img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.cart-item-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 24px;
+}
+
+.number-input {
+    width: 80px;
+    text-align: center;
+}

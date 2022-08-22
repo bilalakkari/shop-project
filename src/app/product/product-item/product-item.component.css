@@ -1,0 +1,36 @@
+/* 
+taken from Udacity repo:
+https://github.com/udacity/nd-0067-c3-angular-fundamentals-project-starter
+ */
+
+.product-image {
+  list-style-type: none;
+  width: 290px;
+  padding: 20px;
+  margin: 6px 6px;
+  border: 1px solid #33B5E5;
+  min-height: 414px;
+  max-height: 414px;
+}
+
+.product-container {
+  margin-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.select-input {
+  width: 108px;
+  margin-bottom: 8px;
+}
+
+p {
+  width: 250px;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,50 @@
+/* 
+taken from Udacity repo:
+https://github.com/udacity/nd-0067-c3-angular-fundamentals-project-starter
+ */
+
+img {
+  border-radius: 10px;
+  width: 320px;
+}
+
+.divider {
+  margin-right: 24px;
+}
+
+.select-input {
+  width: 108px;
+  margin-bottom: 8px;
+}
+
+.detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 104px;
+  margin-bottom: 48px;
+}
+
+
+/* better cart display pararmeters on mobile */
+@media (max-width: 400px) {
+  .detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 104px;
+    padding: 12px;
+  }
+}
+
+.detail-item {
+  margin-left: 128px;
+  margin-right: 128px;
+}
+
+.back-link,
+a {
+  color: #33B5E5;
+  margin-top: 8px;
+  text-decoration: none;
+}

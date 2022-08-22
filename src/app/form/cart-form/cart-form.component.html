@@ -1,0 +1,43 @@
+<form #form="ngForm" (ngSubmit)="confirmation()">
+    <div class="form-group entry">
+        <label for="name">{{ nameLabel }}</label>
+        <input class="form-control" type="text" id="name" name="name" placeholder="{{ nameDefault }}"
+            [(ngModel)]="fullName" required minlength="3">
+    </div>
+
+    <div class="form-group entry">
+        <label for="address">{{ addressLabel }}</label>
+        <input class="form-control" type="text" id="address" name="address" placeholder="{{ addressDefault }}"
+            [(ngModel)]="address" required minlength="6">
+    </div>
+
+    <div class="form-group entry">
+        <label for="cc">{{ creditCardNumberLabel }}</label>
+        <input class="form-control" type="text" id="cc" name="cc" placeholder="{{ creditCardNumberDefault }}"
+            [(ngModel)]="cc" required minlength="16" maxlength="16">
+    </div>
+
+    <div class="form-group" style="margin: 8px 0px;">
+        <small id="tiny-message" class="form-text text-muted">{{ message }}</small>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" (change)="changeShipping($event)" name="flexRadioDefault1"
+            id="{{freeId}}" [checked]="checked1">
+        <label class="form-check-label" for="free">{{free}} (<b>{{freePrice | currency}}</b>)</label>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" (change)="changeShipping($event)" name="flexRadioDefault2"
+            id="{{speedyId}}" [checked]="checked2">
+        <label class="form-check-label" for="speedy">{{speedy}} (<b>{{speedyPrice | currency}}</b>)</label>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" (change)="changeShipping($event)" name="flexRadioDefault3"
+            id="{{overnightId}}" [checked]="checked3">
+        <label class="form-check-label" for="overnight">{{overnight}} (<b>{{overnightPrice | currency}}</b>)</label>
+    </div>
+
+    <input type="submit" [disabled]="form.invalid" value="Submit" class="btn btn-info" style="margin-top: 8px">
+</form>

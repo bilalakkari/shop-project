@@ -1,0 +1,18 @@
+<ng-container *ngIf="total<=0">
+
+</ng-container>
+
+<div *ngIf="total>0" class="confirmation-container">
+    <h1>{{ success }}</h1>
+    <img src="{{ imgUrl }}">
+    <p>{{ thankYouLine }}&nbsp;<b>{{ name }}</b>!</p>
+    <p>{{ orderLine }}&nbsp;<b>{{ total | currency }}</b></p>
+    <p>{{ addressLine }}&nbsp;<b>{{ address }}</b></p>
+    <p>{{ finalLine }}&nbsp;<b>{{shippingTimeline}}</b></p>
+
+    <a routerLink="/">
+        <form>
+            <input type=button class="btn btn-primary" value="{{ buttonText }}">
+        </form>
+    </a>
+</div>

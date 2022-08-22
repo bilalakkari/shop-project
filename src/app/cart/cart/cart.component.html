@@ -1,0 +1,20 @@
+<!-- empty cart page -->
+<div *ngIf="cartKeys.length === 0" class="empty-cart-message">
+    <h1 style="margin-top: 24px;">{{ emptyCartMessageTop }}</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Simple_shopping_cart.svg">
+    <h4>{{ emptyCartMessageBottom }} <a routerLink="/">{{ linkText }}</a>!</h4>
+</div>
+
+<!-- non-empty cart page -->
+<div *ngIf="total>0" class="cart-container">
+
+    <div>
+        <div *ngFor="let key of cartKeys" class="vertical-cart-items">
+            <app-cart-items (totalEmitter)="updateTotal($event)" [id]="key"></app-cart-items>
+        </div>
+        <h2>Total: {{ total | currency }}</h2>
+    </div>
+
+    <div class="cart-panel"></div>
+
+</div>
