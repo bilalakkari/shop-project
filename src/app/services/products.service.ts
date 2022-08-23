@@ -15,7 +15,7 @@ export class ProductsService {
 
   // stream products within data.json
   getProductsStream(): Observable<Product[]> {
-    return this.httpClient.get<Product[]>("/src/assets/data.json");
+    return this.httpClient.get<Product[]>("https://ma20222208.herokuapp.com/api/home/data/");
   }
 
 }
