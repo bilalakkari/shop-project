@@ -15,7 +15,7 @@ export class ProductsService {
 
   // stream products within data.json
   getProductsStream(): Observable<Product[]> {
-    return this.httpClient.get<Product[]>("E:\Training\angular\shop-project\App01\src\assets\data.json");
+    return this.httpClient.get<Product[]>("/src/assets/data.json");
   }
 
 }
