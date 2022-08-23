@@ -5,12 +5,10 @@ https://github.com/udacity/nd-0067-c3-angular-fundamentals-project-starter
 
 .product-image {
   list-style-type: none;
-  width: 290px;
-  padding: 20px;
-  margin: 6px 6px;
-  border: 1px solid #33B5E5;
-  min-height: 414px;
-  max-height: 414px;
+  width: 150px;
+  margin-left: 75px;
+  min-height: 200px;
+  max-height: 200px;
 }
 
 .product-container {
@@ -32,5 +30,13 @@ p {
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+h5 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 250px;
+  height: 1.2em;
   white-space: nowrap;
 }

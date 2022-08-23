@@ -10,12 +10,17 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FooterComponent } from './footer/footer.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { ShopComponent } from './shop/shop.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     FooterComponent,
+    CarouselComponent,
+    ShopComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +31,7 @@ import { FooterComponent } from './footer/footer.component';
     NavigationModule,
     FormModule,
     FormsModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

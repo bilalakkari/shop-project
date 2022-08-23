@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from 'src/app/services/api.service';
-import { CartService } from 'src/app/services/cart.service';
-import { GetProductsService } from 'src/app/services/get-products.service';
-import { ProductsService } from '../../services/products.service';
+import { ApiService } from '../services/api.service';
+import { CartService } from '../services/cart.service';
+import { GetProductsService } from '../services/get-products.service';
+import { ProductsService } from '../services/products.service';
 
 @Component({
-  selector: 'app-product-list',
-  templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  selector: 'app-shop',
+  templateUrl: './shop.component.html',
+  styleUrls: ['./shop.component.css']
 })
-export class ProductListComponent implements OnInit {
-
+export class ShopComponent implements OnInit {
   productList: any;
   public searchTerm !: string;
 

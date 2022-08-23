@@ -4,36 +4,3 @@ https://github.com/udacity/nd-0067-c3-angular-fundamentals-project-starter
 
 altered to make header sticky
 */
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.nav-bar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  background: #44849b;
-  color: #fff;
-  padding: 12px;
-}
-
-/* margin-top: auto keeps footer glued to the bottom of the page */
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100px;
-  margin: auto 0 0 0;
-  background-color: lightgray;
-  text-align: center;
-}
-
-img {
-  max-width: 40px;
-  max-height: 40px;
-}

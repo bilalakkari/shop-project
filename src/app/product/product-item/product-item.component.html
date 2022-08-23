@@ -1,7 +1,10 @@
-<div class="product-container">
+<div class="card" style="width: 18rem;margin: 30px;">
     <a routerLink="products/{{ product.id }}">
-        <img src="{{ product.image }}" class="product-image">
+        <img class="product-image" src="{{ product.image }}" alt="Card image cap">
     </a>
-    <p>{{ product.title }}</p>
-    <button routerLink="products/{{ product.id }}" type=" button" class="btn btn-secondary">Show Details</button>
+    <div class="card-body">
+        <h5 class="card-title">{{product.title}}</h5>
+        <button routerLink="products/{{ product.id }}" type=" button" class="btn btn-secondary">Show More
+            Details</button>
+    </div>
 </div>
