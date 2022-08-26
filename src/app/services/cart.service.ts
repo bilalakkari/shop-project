@@ -9,11 +9,6 @@ import { ProductsService } from './products.service';
 
 export class CartService {
 
-  /*
-  cart is a map
-  key: id
-  value: {quantity:value, price:value}
-  */
   cart: Map<string, CartPayload> = new Map();
   shipping: number = 0;
   removedFromCartAlertMessage: string = "Removed from cart!";
